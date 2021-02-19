@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"  
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ <bean name="emp1" class="com.saurabh.Collections.Employee">
+ 	<property name="id" value="100"/>
+ 	
+ 	<!-- List -->
+ 	<property name="phones">
+ 		<list>
+ 			<value>1000000</value>
+ 			<value>8174545</value>
+ 			<value>2000088</value>
+ 			<value>4745252</value>
+ 			<value>8946276</value>
+ 		</list>
+ 	</property>
+ 	
+ 	<!-- Set -->
+ 	<property name="addresses">
+ 		<set>
+ 			<value>India</value>
+ 			<value>Russia</value>
+ 			<value>Iceland</value>
+ 			<value>Dubai</value>
+ 			<value>Australia</value>
+ 		</set>
+ 	</property>
+ 	
+ 	<!-- Map -->
+ 	<property name="courses">
+ 		<map>
+ 			<entry key="Java" value="10 year"/>
+ 			<entry key="JavaScript" value="7 year"/>
+ 			<entry key="Python" value="5 year"/>
+ 			<entry key="C++" value="3 year"/>
+ 			<entry key="Scala" value="2 months"/>
+ 		</map>
+ 	</property>
+ </bean>
+ 
+ </beans>
